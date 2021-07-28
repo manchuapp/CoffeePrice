@@ -133,7 +133,7 @@ h2 { margin-top: 0; }
 
 .tm-drinks-nav > ul > li > a {
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding-top: 15px;
     padding-bottom: 5px;
     border-bottom: 3px solid transparent;
@@ -336,7 +336,7 @@ h2 { margin-top: 0; }
 }
 
 @media (max-width: 479px) {
-    .tm-site-name { font-size: 2.5rem; }
+    .tm-site-name { font-size: 2.6rem; }
     .tm-site-logo { margin-right: 20px; }
 
     .tm-list-item {
