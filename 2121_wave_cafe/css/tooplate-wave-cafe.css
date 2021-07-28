@@ -233,7 +233,7 @@ h2 { margin-top: 0; }
     margin: 30px 10px;
 }
 
-.tm-special-item-title { font-size: 1.3rem; }
+.tm-special-item-title { font-size: 1.4rem; }
 .tm-special-item-description { padding: 25px 30px; }
 
 /* Contact */
@@ -336,7 +336,7 @@ h2 { margin-top: 0; }
 }
 
 @media (max-width: 479px) {
-    .tm-site-name { font-size: 2.6rem; }
+    .tm-site-name { font-size: 2.5rem; }
     .tm-site-logo { margin-right: 20px; }
 
     .tm-list-item {
