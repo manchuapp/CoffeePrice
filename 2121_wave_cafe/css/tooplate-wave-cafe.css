@@ -133,7 +133,7 @@ h2 { margin-top: 0; }
 
 .tm-drinks-nav > ul > li > a {
     color: white;
-    font-size: 1.0rem;
+    font-size: 1.2rem;
     padding-top: 15px;
     padding-bottom: 5px;
     border-bottom: 3px solid transparent;
@@ -178,7 +178,7 @@ h2 { margin-top: 0; }
 }
 
 .tm-list-item-text {
-    padding: 20px 25px;
+    padding: 20px 26px;
     flex: 1;
 }
 
