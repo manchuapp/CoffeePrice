@@ -380,8 +380,8 @@ h2 { margin-top: 0; }
 .tm-Share-text-container {
     padding: 45px 50px;
     margin-bottom: 20px;
-    <div class="text-center-x">Text</div>
-    .text-center-x { text-align: center; }
+    align-items: center;
+    justify-content: center;
 }
 
 .tm-Share-form-container {
