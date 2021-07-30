@@ -379,14 +379,14 @@ h2 { margin-top: 0; }
 /* Share */
 .tm-Share-text-container {
     padding: 45px 50px;
-    margin-bottom: 20px;    
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .tm-Share-form-container {
     max-width: 460px;
     padding: 40px 50px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    box-sizing: border-box;    
 }
