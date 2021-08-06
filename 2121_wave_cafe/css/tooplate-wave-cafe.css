@@ -330,7 +330,7 @@ h2 { margin-top: 0; }
     .find { display: inline-block;}
 }
 
-@media (max-width: 574px) {
+@media (max-width: 589px) {
     .tm-site-nav-ul { display: block; }
 }
 
