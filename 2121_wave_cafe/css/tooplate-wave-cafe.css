@@ -311,7 +311,7 @@ h2 { margin-top: 0; }
     width:100%;height:100%;    	
 }
 
-@media (max-width: 1130px) and (min-width: 992px) {
+@media (max-width: 1700px) and (min-width: 1452px) {
     .tm-left-inner { max-width: 380px; }
     .tm-site-name { font-size: 2.4rem; }
     .tm-site-logo { margin-right: 20px; }
@@ -319,13 +319,15 @@ h2 { margin-top: 0; }
     .tm-page-link-icon { margin-right: 15px; }
     .tm-left { width: 45%; }
     .tm-right { width: 55%; }
+    .find { max-width: 600px;}
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1451px) {
     .tm-left-inner { position: static; }
     .tm-left, .tm-right { width: 100%; }
     .tm-left { margin-bottom: 50px; }
     .tm-row { display: block; }
+    .find { display: inline-block;}
 }
 
 @media (max-width: 574px) {
