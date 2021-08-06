@@ -294,6 +294,7 @@ h2 { margin-top: 0; }
 
 /* find */
 .find {
+    .tm-about-box-1 { padding: 40px 30px 50px 0; }
     position:relative;
     margin:0 auto;
     max-width:600px;
