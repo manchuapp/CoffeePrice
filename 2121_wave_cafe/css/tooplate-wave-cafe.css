@@ -372,7 +372,7 @@ h2 { margin-top: 0; }
     display: inline-block;	
 }
 .find > div iframe {
-    position:fixed;
+    position:absolute;
     display:flex;
     justify-content: space-between;	
     z-index:1;
