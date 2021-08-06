@@ -293,8 +293,7 @@ h2 { margin-top: 0; }
 .tm-mb-30 { margin-bottom: 30px; }
 
 /* find */
-.find {
-    .tm-about-box-1 { padding: 40px 30px 50px 0; }
+.find {    
     position:relative;
     margin:0 auto;
     max-width:600px;
