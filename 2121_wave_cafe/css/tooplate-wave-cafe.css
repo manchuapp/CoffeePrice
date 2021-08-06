@@ -360,7 +360,8 @@ h2 { margin-top: 0; }
     .tm-drinks-nav > ul > li > a { display: block; }
 }
 /* find */
-.find {
+@media (max-width: 1130px) and (min-width: 992px) {
+.find
     position:relative;
     margin:0 auto;
     max-width:700px;
