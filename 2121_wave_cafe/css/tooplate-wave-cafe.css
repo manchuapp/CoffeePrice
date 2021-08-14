@@ -313,7 +313,7 @@ h2 { margin-top: 0; }
 
 @media (max-width: 1130px) and (min-width: 992px) {
     .tm-left-inner { max-width: 470px; }
-    .tm-site-name { font-size: 2.4rem; }
+    .tm-site-name { font-size: 2.3rem; }
     .tm-site-logo { margin-right: 20px; }
     .tm-page-link { width: 100%; }
     .tm-page-link-icon { margin-right: 15px; }
