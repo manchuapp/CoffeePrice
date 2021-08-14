@@ -296,7 +296,7 @@ h2 { margin-top: 0; }
 .find {    
     position:relative;
     margin:0 auto;
-    max-width:800px;
+    max-width:500px;
     width:100%;
 }
 .find > div {
