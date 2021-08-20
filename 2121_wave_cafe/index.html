@@ -27,6 +27,46 @@ https://www.tooplate.com/view/2121-wave-cafe
 <script data-ad-client="ca-pub-6140875866423079" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
+function navi_cookie(){
+			if (navigator.geolocation) { // GPS를 지원하면
+		navigator.geolocation.getCurrentPosition(function(position) {
+		//--- 위치정보 출력 
+		//alert(position.coords.latitude + ' ' + position.coords.longitude);
+		x_data = position.coords.latitude;
+		y_data = position.coords.longitude;
+			$.ajax({
+				type : "POST"
+				, url : "/Bboard/navi_cookie.php"
+				, dataType : "JSON"
+				, data : {x_data:x_data,y_data:y_data}
+				, success : function(data){
+					location.reload();
+				}
+			});	
+		}, function(error) {
+			console.error(error);
+		}, {
+			enableHighAccuracy: false,
+			maximumAge: 0,
+			timeout: Infinity
+		});
+	}else{
+		x_data = "nodata";
+		y_data = "nodata";
+			$.ajax({
+				type : "POST"
+				, url : "/Bboard/navi_cookie.php"
+				, dataType : "JSON"
+				, data : {x_data:x_data,y_data:y_data}
+				, success : function(data){
+				}
+			});	
+	}
+}
+var navidata = "";
+if(navidata == ""){
+	navi_cookie();
+}    
   <div class="tm-container">
     <div class="tm-row">
       <!-- Site Header -->
