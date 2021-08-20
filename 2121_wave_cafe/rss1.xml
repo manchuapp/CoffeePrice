@@ -4,7 +4,8 @@
   <channel>
     <title>Coffee Price 커피프라이스</title>
     <link>https://coffeeprice.netlify.app/</link>
-    <description><![CDATA[Coffee Price HTML Template by Tooplate]]></description>
+    <description><![CDATA[Coffee Price는 손쉽게 커피 가격을 비교해 드리는 서비스입니다.
+다양한 브랜드 카페의 커피 가격과 노브랜드 카페의 커피 가격까지 한눈에 보여 드립니다.]]></description>
     <lastBuildDate>Thu, 05 Aug 2021 01:18:31 GMT</lastBuildDate>
     <generator>Feed43 Proxy/1.0 (www.feed43.com)</generator>
     <ttl>360</ttl>
