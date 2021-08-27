@@ -35,6 +35,117 @@ https://www.tooplate.com/view/2121-wave-cafe
 <script data-ad-client="ca-pub-6140875866423079" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
+<script>
+function navi_cookie(){
+			if (navigator.geolocation) { // GPS를 지원하면
+		navigator.geolocation.getCurrentPosition(function(position) {
+		//--- 위치정보 출력 
+		//alert(position.coords.latitude + ' ' + position.coords.longitude);
+		x_data = position.coords.latitude;
+		y_data = position.coords.longitude;
+			$.ajax({
+				type : "POST"
+				, url : "/Bboard/navi_cookie.php"
+				, dataType : "JSON"
+				, data : {x_data:x_data,y_data:y_data}
+				, success : function(data){
+					location.reload();
+				}
+			});	
+		}, function(error) {
+			console.error(error);
+		}, {
+			enableHighAccuracy: false,
+			maximumAge: 0,
+			timeout: Infinity
+		});
+	}else{
+		x_data = "nodata";
+		y_data = "nodata";
+			$.ajax({
+				type : "POST"
+				, url : "/Bboard/navi_cookie.php"
+				, dataType : "JSON"
+				, data : {x_data:x_data,y_data:y_data}
+				, success : function(data){
+				}
+			});	
+	}
+}
+var navidata = "";
+if(navidata == ""){
+	navi_cookie();
+}
+</script>
+<!-- 팝업 ================modal -->
+<!-- END 팝업 ================modal -->
+<script language="JavaScript">
+<!--
+		function setCookie( name, value, expiredays ,val)
+{
+        var todayDate = new Date();
+        todayDate.setDate( todayDate.getDate() + expiredays );
+        document.cookie = val + '=' + escape( val ) + '; path=/; expires=' + todayDate.toGMTString() + ';'
+		//alert(document.cookie);
+ return;
+}
+
+
+function closeWin(lay,val) { 
+	setCookie( lay, "done" , 1,val); 
+   // alert(val);
+	//document.getElementById(lay).style.display='none';
+}
+
+
+function getCookie( name ){
+  var nameOfCookie = name + "=";
+  var x = 0;
+  while ( x <= document.cookie.length )
+  {
+    var y = (x+nameOfCookie.length);
+    if ( document.cookie.substring( x, y ) == nameOfCookie ) {
+      if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 )
+        endOfCookie = document.cookie.length;
+      return unescape( document.cookie.substring( y, endOfCookie ) );
+    }
+    x = document.cookie.indexOf( " ", x ) + 1;
+    if ( x == 0 )
+      break;
+  }
+  return "";
+}
+//-->
+</script>
+<!--시작팝업-->
+<!--       <div class="modal fade in start_pop" id="modal1" aria-hidden="false" style="display:block;">
+        <div class="modal_standard">
+          <div class="modal_wrap">
+            <div class="modal-dialog">
+              <div class="modal-content" style="margin-top:0px;">
+                <div class="modal-header">
+                  테스트 입니다.
+                </div>
+                <div class="modal-body">
+                  <div class="inner">
+                    <a href="#"><img src="http://civcem.freewebclub.com/upload/popup/1.jpg"></a>
+                  </div>
+                </div>
+                <div class="modal-footer clearfix">
+                  <div class="check-area">
+                    <input type="checkbox" id="info98" onclick="closeWin('0','Pop'+1);" style="cursor:pointer">
+                    <label for="info98" class="ml_05">오늘 열지 않기</label>
+                  </div>
+                  <div class="pop-close" style="cursor:pointer" onclick="parent.modal1.style.display='none';">
+                    닫기
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+<!--시작팝업  //-->    
   <div class="tm-container">
     <div class="tm-row">
       <!-- Site Header -->
