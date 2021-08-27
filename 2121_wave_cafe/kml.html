@@ -32,6 +32,7 @@
         function initMap() {
           const map = new google.maps.Map(document.getElementById("map"), {
             zoom: 11,
+            center: { lat: 37.556110, lng: 126.972328 },
           });
           const ctaLayer = new google.maps.KmlLayer({
             url: "https://github.com/manchuapp/CoffeePrice/edit/main/2121_wave_cafe/Coffee Price.kml",
