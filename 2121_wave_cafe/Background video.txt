@@ -1,0 +1,23 @@
+1125
+        </main>
+      </div>    
+    </div>
+    <footer class="tm-site-footer">
+      <p class="tm-black-bg tm-footer-text">Copyright 2020 Wave Cafe
+      
+      | Design: <a href="https://www.tooplate.com" class="tm-footer-link" rel="sponsored" target="_parent">Tooplate</a></p>
+<!-- 코스모스팜 소셜댓글 시작 -->
+<script id="cosmosfarm-comments-script" type="text/javascript" src="https://plugin.cosmosfarm.com/comments.js"></script>
+<div id="cosmosfarm-comments" data-plugin-id="1517511361744254" data-href="https://coffeeprice.netlify.app/" data-width="550" data-row="10"><a href="http://www.cosmosfarm.com/plugin/comments">코스모스팜 소셜댓글</a></div>
+<!-- 코스모스팜 소셜댓글 종료 -->        
+    </footer>
+  </div>
+      
+  <!-- Background video -->
+  <div class="tm-video-wrapper">
+      <i id="tm-video-control-button" class="fas fa-pause"></i>
+      <video autoplay muted loop id="tm-video">
+          <source src="video/wave-cafe-video-bg.mp4" type="video/mp4">
+      </video>
+  </div>
+1146
